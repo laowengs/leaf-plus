@@ -1,4 +1,4 @@
-package io.github.laowengs.leafplus.facade.api;
+package io.github.laowengs.leafplus.api;
 
 public interface ILeafApi {
     Long get(String var1);
