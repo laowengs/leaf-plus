@@ -18,6 +18,7 @@
     <modules>
         <module>leaf-plus-facade</module>
         <module>leaf-plus-impl</module>
+        <module>leaf-core</module>
     </modules>
     <scm>
         <connection/>
