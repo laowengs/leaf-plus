@@ -30,6 +30,17 @@
         <java.version>17</java.version>
         <dubbo.version>3.2.14</dubbo.version>
         <spring-boot.version>3.2.8</spring-boot.version>
+
+        <mybatis.version>3.3.0</mybatis.version>
+        <perf4j.version>0.9.16</perf4j.version>
+        <curator.version>2.6.0</curator.version>
+        <slf4j.version>1.7.2</slf4j.version>
+        <druid.version>1.0.18</druid.version>
+        <jackson-databind.version>2.9.6</jackson-databind.version>
+        <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+        <commons-io.version>2.4</commons-io.version>
+        <log4j.version>2.7</log4j.version>
+        <mybatis-spring.version>1.2.5</mybatis-spring.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -62,6 +73,48 @@
                 <groupId>io.github.laowengs</groupId>
                 <artifactId>leaf-plus-facade</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--zk-->
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>${curator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.perf4j</groupId>
+                <artifactId>perf4j</artifactId>
+                <version>${perf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
             </dependency>
         </dependencies>
     </dependencyManagement>
